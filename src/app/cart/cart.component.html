@@ -1,0 +1,90 @@
+<hr/>
+<h3>cart works!</h3>
+<h3>if else statement</h3>
+<button (click)="show()">show red div</button>
+<button (click)="hide()">show green div </button>
+<button (click)="toggleDiv()">{{displayDiv ? 'show green div': 'show red div' }}</button>
+@if(displayDiv){
+    <div id="redDiv" class="toggle-div">
+
+    </div>
+}
+@else{
+     <div id="greenDiv" class="toggle-div">
+
+    </div>
+}
+
+<br>
+<h3>else if statement</h3>
+<button (click)="showDivWithColor(1)">Red</button>
+<button (click)="showDivWithColor(2)">Green</button>
+<button (click)="showDivWithColor(3)">Pink</button>
+<button (click)="showDivWithColor(4)">Other</button>
+<input type="text" (input)="handleInput($event)" /> 
+@if(divColorNumber == 1){
+    <div id="redDiv" class="toggle-div">
+
+    </div>
+}
+@else if(divColorNumber == 2){
+     <div id="greenDiv" class="toggle-div">
+
+    </div>
+}@else if(divColorNumber == 3){
+     <div id="pinkDiv" class="toggle-div">
+
+    </div>
+}@else{
+    <div id="blackDiv" class="toggle-div">
+
+    </div>
+}
+
+<br/>
+<h3> Switch Statement</h3>
+<button (click)="showStDivWithColor('red')">Red</button>
+<button (click)="showStDivWithColor('green')">Green</button>
+<button (click)="showStDivWithColor('pink')">Pink</button>
+<button (click)="showStDivWithColor('black')">Other</button>
+<input type="text" (input)="handleStInput($event)" /> 
+
+@switch(color){
+
+    @case('red'){
+        <div id="redDiv" class="toggle-div">
+
+        </div>
+    }
+    @case('green'){
+        <div id="greenDiv" class="toggle-div">
+
+        </div>
+    }
+    @case('pink'){
+        <div id="pinkDiv" class="toggle-div">
+
+        </div>
+    }
+    @default{
+        <div id="blackDiv" class="toggle-div">
+                No Color Match
+        </div>
+    }
+
+}
+
+
+
+
+<br/>
+<h1>Loops </h1>
+<h2>user List</h2>
+@for(user of users; track user){
+    <h5>{{user}}</h5>
+}
+
+<h2>Student List</h2>
+@for(student of students; track student){
+    <h3>{{student.id}} | {{student.name}} | {{student.class}} <button (click)="getName(student.name)">Get Name</button></h3>
+}

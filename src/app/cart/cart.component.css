@@ -1,0 +1,23 @@
+.toggle-div{
+    min-height: 200px;
+    max-height: 200px;
+    min-width: 200px;
+    max-width: 200px;
+}
+#redDiv{
+
+  background-color: red;
+}
+
+#greenDiv{
+  background-color: rgb(0, 84, 27);
+}
+
+#pinkDiv{
+    background-color: pink;
+}
+
+#blackDiv{
+    background-color: black;
+    color: white;
+}
