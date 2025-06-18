@@ -28,4 +28,21 @@ export class AppComponent {
    event_checker(event:Event){
       console.log("event",event );
    }
+
+
+   // Data types
+   name = "Amol";
+   get_name(){
+    //this.name = 1;  // error
+    this.name = "Shinde";
+   }
+  
+   mixType:number|string = "Hello";
+  
+   sum(num1:number,num2: number ){
+    alert(`Sum of num1 + num2 = ${num1+num2}`);
+
+    this.mixType = 1;
+    this.mixType = "Hello";
+   }
 }
