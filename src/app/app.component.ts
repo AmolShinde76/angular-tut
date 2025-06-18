@@ -3,9 +3,11 @@ import { Component } from '@angular/core';
 import { LoginComponent } from './login/login.component';
 import { EventComponent } from './event/event.component';
 import {InputGetSetComponent} from './input-get-set/input-get-set.component'
+import { ProfileComponent } from './profile/profile.component';
+
 @Component({
   selector: 'app-root',
-  imports: [LoginComponent, EventComponent,InputGetSetComponent],
+  imports: [LoginComponent, EventComponent,InputGetSetComponent, ProfileComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'  
 })
