@@ -1,0 +1,8 @@
+<p>event works!</p>
+
+<h1 (click)="eventHandler($event)" style="min-width: 100px; min-height: 100px; background-color: blue;">Hello</h1>
+
+<h3>Your Name is : {{name}}</h3>
+<label>Enter your  name:</label>
+<!-- <input type="text" (change)="inputHandler($event)" /> -->
+ <input type="text" (keyup)="inputHandler($event)" />
