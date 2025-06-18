@@ -1,16 +1,31 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+//import { RouterOutlet } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, LoginComponent],
+  imports: [LoginComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css'  
 })
 export class AppComponent {
-  title = 'Angular App';
-  name = 'Amol Shinde';
-  city = 'Mumbai';
-  x = 10;
-  y = 20;
+  title = "Angular App";
+
+   say_hello() 
+   {
+      alert("Hello from app Component");
+      this.other();
+   } 
+
+   other(){
+    alert("Other function also called");
+   }
+    greeting_by_name(name:string) 
+   {
+      alert( `Hello ${name}`);
+   }  
+   
+
+   event_checker(event:Event){
+      console.log("event",event );
+   }
 }
