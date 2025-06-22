@@ -1,0 +1,19 @@
+<h3>user works!</h3>
+<h3>contextual Variables</h3>
+@for(user of users; track user; let x = $index;){    
+    
+    @if($first){
+        <h4 style="color: orange;">this is {{$index}} | {{x}} user: {{user}} | total users: {{$count}} </h4>
+    }
+    @if($last){
+        <h4 style="color: red;">this is {{$index}} | {{x}} user: {{user}} </h4>
+    }
+    @if($odd){
+        <h4 style="color: green;">this is {{$index}} | {{x}} user: {{user}} </h4>
+    }@if($even){
+        <h4 style="color: blue;">this is {{$index}} | {{x}} user: {{user}} </h4>
+    } 
+}
+@empty(){
+    <h4>no users found</h4>
+}

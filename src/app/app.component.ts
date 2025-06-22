@@ -6,10 +6,12 @@ import {InputGetSetComponent} from './input-get-set/input-get-set.component'
 import { ProfileComponent } from './profile/profile.component';
 import { CartComponent } from './cart/cart.component';
 import { ProductComponent } from './product/product.component';
+import { UserComponent } from './user/user.component';
+
 
 @Component({
   selector: 'app-root',
-  imports: [LoginComponent, EventComponent,InputGetSetComponent, ProfileComponent, CartComponent, ProductComponent],
+  imports: [LoginComponent, EventComponent,InputGetSetComponent, ProfileComponent, CartComponent, ProductComponent, UserComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'  
 })
