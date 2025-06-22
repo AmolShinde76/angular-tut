@@ -1,0 +1,18 @@
+<hr/>
+<h3>product works!</h3>
+<h4>signal value: {{count()}} </h4>
+<h4>update signal with function</h4>
+<button (click)="updateValue(-1)">Decr</button>
+<button (click)="updateValue(1)">Incr</button>
+
+
+<br/>
+<h4>Update signal value with inline code</h4>
+<button (click)="count.set(count()-1)">Decr</button>
+<button (click)="count.set(count()+1)">Incr</button>
+
+
+<h3>Compute signal</h3>
+<h4>value of the compute signal:num1:  {{num1()}}; num2: {{num2()}}; sum: {{numberSum()}}</h4>
+
+<button (click)="showValue()">Incr</button>

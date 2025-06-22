@@ -5,10 +5,11 @@ import { EventComponent } from './event/event.component';
 import {InputGetSetComponent} from './input-get-set/input-get-set.component'
 import { ProfileComponent } from './profile/profile.component';
 import { CartComponent } from './cart/cart.component';
+import { ProductComponent } from './product/product.component';
 
 @Component({
   selector: 'app-root',
-  imports: [LoginComponent, EventComponent,InputGetSetComponent, ProfileComponent, CartComponent],
+  imports: [LoginComponent, EventComponent,InputGetSetComponent, ProfileComponent, CartComponent, ProductComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'  
 })
