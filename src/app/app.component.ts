@@ -8,10 +8,11 @@ import { CartComponent } from './cart/cart.component';
 import { ProductComponent } from './product/product.component';
 import { UserComponent } from './user/user.component';
 import { HomeComponent } from './home/home.component';
+import { DynamicComponent } from './dynamic/dynamic.component';
 
 @Component({
   selector: 'app-root',
-  imports: [HomeComponent, LoginComponent, EventComponent,InputGetSetComponent, ProfileComponent, CartComponent, ProductComponent, UserComponent],
+  imports: [DynamicComponent, HomeComponent, LoginComponent, EventComponent,InputGetSetComponent, ProfileComponent, CartComponent, ProductComponent, UserComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'  
 })
