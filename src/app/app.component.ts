@@ -9,10 +9,11 @@ import { ProductComponent } from './product/product.component';
 import { UserComponent } from './user/user.component';
 import { HomeComponent } from './home/home.component';
 import { DynamicComponent } from './dynamic/dynamic.component';
+import { DirectivesComponent } from './directives/directives.component';
 
 @Component({
   selector: 'app-root',
-  imports: [DynamicComponent, HomeComponent, LoginComponent, EventComponent,InputGetSetComponent, ProfileComponent, CartComponent, ProductComponent, UserComponent],
+  imports: [DirectivesComponent, DynamicComponent, HomeComponent, LoginComponent, EventComponent,InputGetSetComponent, ProfileComponent, CartComponent, ProductComponent, UserComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'  
 })

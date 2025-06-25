@@ -1,0 +1,56 @@
+<hr/>
+<h3>directives works!</h3>
+
+<hr/>
+<h4>NgIf directive</h4>
+
+ <p *ngIf="flag">this is flagging</p>
+
+ <hr/>
+<h4>NgFor Directives</h4>
+<p>Student Lis</p>
+    <ul>
+        <li *ngFor="let student of students">{{student}}</li>
+    </ul>
+
+<p>Users List</p>
+<ul>
+    <li *ngFor="let user of users">{{user.id}} {{user.name}}</li>
+</ul>
+
+<hr/>
+<h3>NgIf else</h3>
+<div *ngIf="userFlag; else elseBlock">
+    userFlag is true now
+</div>
+<ng-template #elseBlock>
+    userFlag is false now
+</ng-template>
+
+<hr/>
+<h3>Multiple if statements</h3>
+
+<h2 *ngIf="btnFlag == 1">
+    Heading 1
+</h2>
+<h2 *ngIf="btnFlag == 2">
+    Heading 2
+</h2>
+<h2 *ngIf="btnFlag == 3">
+    Heading 3
+</h2>
+<button (click)="handleClick()">Change heading</button>
+
+<hr/>
+<h3>ngSwitch case</h3>
+<button (click)="handleColor('red')">Red</button>
+<button (click)="handleColor('green')">Green</button>
+<button (click)="handleColor('blue')">Blue</button>
+<button (click)="handleColor('yellow')">Yellow</button>
+<div [ngSwitch]="color">
+<h2 *ngSwitchCase="'red'" style="background-color: red;">Heading 1</h2>
+<h2 *ngSwitchCase="'green'" style="background-color:green;">Heading 2</h2>
+<h2 *ngSwitchCase="'blue'" style="background-color: blue;">Heading 3</h2>
+<h2 *ngSwitchCase="'yellow'" style="background-color: yellow;">Heading 4</h2>
+<h2 *ngSwitchDefault="'black'" style="background-color: black; color: white;">Heading 5</h2>
+</div>
